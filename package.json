@@ -1,0 +1,31 @@
+{
+  "name": "argil-cli",
+  "version": "0.1.0",
+  "description": "CLI for the Argil.ai video API",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nardjo/argil-cli.git"
+  },
+  "keywords": [
+    "argil",
+    "cli",
+    "api2cli"
+  ],
+  "license": "MIT",
+  "bin": {
+    "argil-cli": "./dist/argil-cli.js"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outfile dist/argil-cli.js --target bun",
+    "dev": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "commander": "^13.0.0",
+    "picocolors": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.7.0"
+  }
+}
